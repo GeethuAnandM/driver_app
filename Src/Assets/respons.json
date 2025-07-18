@@ -1,0 +1,716 @@
+{
+  "CAD": {
+    "AE": {
+      "bankDeposit": false,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "AG": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "AO": {
+      "bankDeposit": false,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "AR": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "AT": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "AU": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "AZ": {
+      "bankDeposit": false,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "BB": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "BD": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": true
+    },
+    "BE": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "BF": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "BG": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "BH": {
+      "bankDeposit": false,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "BI": {
+      "bankDeposit": false,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "BJ": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "BN": {
+      "bankDeposit": false,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "BO": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "BR": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "BY": {
+      "bankDeposit": false,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "BZ": {
+      "bankDeposit": false,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "CA": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": true
+    },
+    "CG": {
+      "bankDeposit": false,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "CH": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "CI": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "CL": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "CM": {
+      "bankDeposit": false,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "CN": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "CO": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "CR": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "CY": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "CZ": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "DE": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "DK": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "DM": {
+      "bankDeposit": false,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "DO": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "EC": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "EE": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "EG": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "ES": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "ET": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "FI": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "FR": {
+      "bankDeposit": false,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "GA": {
+      "bankDeposit": false,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "GB": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "GD": {
+      "bankDeposit": false,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "GF": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "GH": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": true
+    },
+    "GM": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "GN": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "GP": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "GR": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "GT": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "GW": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "GY": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "HK": {
+      "bankDeposit": false,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "HN": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "HT": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "HU": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "ID": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "IE": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "IL": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "IN": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "IS": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "IT": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "JM": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "JO": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "JP": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "KE": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": true
+    },
+    "KG": {
+      "bankDeposit": false,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "KN": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "KR": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "KW": {
+      "bankDeposit": false,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "KZ": {
+      "bankDeposit": false,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "LA": {
+      "bankDeposit": false,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "LB": {
+      "bankDeposit": false,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "LC": {
+      "bankDeposit": false,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "LI": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "LK": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "LR": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "LT": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "LU": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "LV": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "MA": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "MD": {
+      "bankDeposit": false,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "MG": {
+      "bankDeposit": false,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "ML": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "MM": {
+      "bankDeposit": false,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "MQ": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "MR": {
+      "bankDeposit": false,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "MT": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "MU": {
+      "bankDeposit": false,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "MV": {
+      "bankDeposit": false,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "MW": {
+      "bankDeposit": false,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "MX": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "MY": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "NA": {
+      "bankDeposit": false,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "NE": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "NG": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "NI": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "NL": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "NO": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "NP": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "NZ": {
+      "bankDeposit": false,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "OM": {
+      "bankDeposit": false,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "PA": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "PE": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "PH": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": true
+    },
+    "PK": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "PL": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "PT": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "PY": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "QA": {
+      "bankDeposit": false,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "RE": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "RO": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "RU": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "RW": {
+      "bankDeposit": false,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "SA": {
+      "bankDeposit": false,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "SE": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "SG": {
+      "bankDeposit": false,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "SI": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "SK": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "SL": {
+      "bankDeposit": false,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "SN": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "SR": {
+      "bankDeposit": false,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "SV": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": true
+    },
+    "TD": {
+      "bankDeposit": false,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "TG": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "TH": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "TJ": {
+      "bankDeposit": false,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "TN": {
+      "bankDeposit": false,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "TR": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "TT": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "TZ": {
+      "bankDeposit": false,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "UG": {
+      "bankDeposit": false,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "US": {
+      "bankDeposit": true,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "UY": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "UZ": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "VC": {
+      "bankDeposit": false,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "VN": {
+      "bankDeposit": true,
+      "cashPickup": true,
+      "mobileWallet": false
+    },
+    "ZA": {
+      "bankDeposit": false,
+      "cashPickup": false,
+      "mobileWallet": false
+    },
+    "ZM": {
+      "bankDeposit": false,
+      "cashPickup": false,
+      "mobileWallet": false
+    }
+  },
+  "IDR": {
+    "ID": {
+      "bankDeposit": false,
+      "cashPickup": false,
+      "mobileWallet": false
+    }
+  }
+}

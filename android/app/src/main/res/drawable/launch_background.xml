@@ -1,0 +1,8 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+ <item android:gravity="center" android:drawable="@drawable/vd_vector" />
+   <item
+   android:width="147dp"
+    android:height="40dp"
+  android:drawable="@drawable/brand"
+  android:gravity="center|bottom" />
+</layer-list>

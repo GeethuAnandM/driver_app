@@ -1,0 +1,14 @@
+<!-- <resources>
+    <color name="bootsplash_background">#FFFFFF</color>
+      <color name="white">#FFF</color>
+</resources> -->
+
+<resources>
+    <item  name="blue"  type="color">#00C4D1
+    </item>
+    <integer-array  name="androidcolors">
+    <item>@color/blue</item>
+    </integer-array>
+    <color name="bootsplash_background">#FFFFFF</color>
+    <color name="white">#FFF</color>
+  </resources>

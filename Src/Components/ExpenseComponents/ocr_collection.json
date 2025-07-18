@@ -1,0 +1,557 @@
+{
+  "openapi": "3.0.2",
+  "info": {
+    "title": "FastAPI",
+    "version": "0.1.0"
+  },
+  "paths": {
+    "'https://devbankstatement.digisparsh.in:8000upload_Aadhar_card_front/": {
+      "post": {
+        "summary": "Uploadimage",
+        "operationId": "UploadImage_upload_Aadhar_card_front__post",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "$ref": "#/components/schemas/Body_UploadImage_upload_Aadhar_card_front__post"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "'https://devbankstatement.digisparsh.in:8000upload_Aadhar_card_back/": {
+      "post": {
+        "summary": "Uploadimage",
+        "operationId": "UploadImage_upload_Aadhar_card_back__post",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "$ref": "#/components/schemas/Body_UploadImage_upload_Aadhar_card_back__post"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "'https://devbankstatement.digisparsh.in:8000upload_Pan_card/": {
+      "post": {
+        "summary": "Uploadimage",
+        "operationId": "UploadImage_upload_Pan_card__post",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "$ref": "#/components/schemas/Body_UploadImage_upload_Pan_card__post"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "'https://devbankstatement.digisparsh.in:8000Pan_card_detection/": {
+      "post": {
+        "summary": "Uploadimage",
+        "operationId": "UploadImage_Pan_card_detection__post",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "$ref": "#/components/schemas/Body_UploadImage_Pan_card_detection__post"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "'https://devbankstatement.digisparsh.in:8000Aadhar_card_detection/": {
+      "post": {
+        "summary": "Uploadimage",
+        "operationId": "UploadImage_Aadhar_card_detection__post",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "$ref": "#/components/schemas/Body_UploadImage_Aadhar_card_detection__post"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "'https://devbankstatement.digisparsh.in:8000Bank_statement_Analysis/": {
+      "post": {
+        "summary": "Receive File",
+        "operationId": "receive_file_Bank_statement_Analysis__post",
+        "parameters": [
+          {
+            "required": true,
+            "schema": {
+              "title": "Text",
+              "type": "string"
+            },
+            "name": "text",
+            "in": "query"
+          },
+          {
+            "required": false,
+            "schema": {
+              "title": "Password",
+              "type": "string"
+            },
+            "name": "password",
+            "in": "query"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "$ref": "#/components/schemas/Body_receive_file_Bank_statement_Analysis__post"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "'https://devbankstatement.digisparsh.in:8000upload_file/": {
+      "post": {
+        "summary": "Receive File",
+        "operationId": "receive_file_upload_file__post",
+        "parameters": [
+          {
+            "required": true,
+            "schema": {
+              "title": "Text",
+              "type": "string"
+            },
+            "name": "text",
+            "in": "query"
+          },
+          {
+            "required": false,
+            "schema": {
+              "title": "Password",
+              "type": "string"
+            },
+            "name": "password",
+            "in": "query"
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "$ref": "#/components/schemas/Body_receive_file_upload_file__post"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "'https://devbankstatement.digisparsh.in:8000find_id/": {
+      "get": {
+        "summary": "Read Root",
+        "operationId": "read_root_find_id__get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "'https://devbankstatement.digisparsh.in:8000find_id_result/": {
+      "get": {
+        "summary": "Read Root",
+        "operationId": "read_root_find_id_result__get",
+        "parameters": [
+          {
+            "required": true,
+            "schema": {
+              "title": "Id",
+              "type": "string"
+            },
+            "name": "id",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "'https://devbankstatement.digisparsh.in:8000upload_url/": {
+      "post": {
+        "summary": "Receive File",
+        "operationId": "receive_file_upload_url__post",
+        "parameters": [
+          {
+            "required": true,
+            "schema": {
+              "title": "Text",
+              "type": "string"
+            },
+            "name": "text",
+            "in": "query"
+          },
+          {
+            "required": true,
+            "schema": {
+              "title": "Url",
+              "type": "string"
+            },
+            "name": "url",
+            "in": "query"
+          },
+          {
+            "required": false,
+            "schema": {
+              "title": "Password",
+              "type": "string"
+            },
+            "name": "password",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Body_UploadImage_Aadhar_card_detection__post": {
+        "title": "Body_UploadImage_Aadhar_card_detection__post",
+        "required": [
+          "file"
+        ],
+        "type": "object",
+        "properties": {
+          "file": {
+            "title": "File",
+            "type": "string",
+            "format": "binary"
+          }
+        }
+      },
+      "Body_UploadImage_Pan_card_detection__post": {
+        "title": "Body_UploadImage_Pan_card_detection__post",
+        "required": [
+          "file"
+        ],
+        "type": "object",
+        "properties": {
+          "file": {
+            "title": "File",
+            "type": "string",
+            "format": "binary"
+          }
+        }
+      },
+      "Body_UploadImage_upload_Aadhar_card_back__post": {
+        "title": "Body_UploadImage_upload_Aadhar_card_back__post",
+        "required": [
+          "file"
+        ],
+        "type": "object",
+        "properties": {
+          "file": {
+            "title": "File",
+            "type": "string",
+            "format": "binary"
+          }
+        }
+      },
+      "Body_UploadImage_upload_Aadhar_card_front__post": {
+        "title": "Body_UploadImage_upload_Aadhar_card_front__post",
+        "required": [
+          "file"
+        ],
+        "type": "object",
+        "properties": {
+          "file": {
+            "title": "File",
+            "type": "string",
+            "format": "binary"
+          }
+        }
+      },
+      "Body_UploadImage_upload_Pan_card__post": {
+        "title": "Body_UploadImage_upload_Pan_card__post",
+        "required": [
+          "file"
+        ],
+        "type": "object",
+        "properties": {
+          "file": {
+            "title": "File",
+            "type": "string",
+            "format": "binary"
+          }
+        }
+      },
+      "Body_receive_file_Bank_statement_Analysis__post": {
+        "title": "Body_receive_file_Bank_statement_Analysis__post",
+        "required": [
+          "file"
+        ],
+        "type": "object",
+        "properties": {
+          "file": {
+            "title": "File",
+            "type": "string",
+            "format": "binary"
+          }
+        }
+      },
+      "Body_receive_file_upload_file__post": {
+        "title": "Body_receive_file_upload_file__post",
+        "required": [
+          "file"
+        ],
+        "type": "object",
+        "properties": {
+          "file": {
+            "title": "File",
+            "type": "string",
+            "format": "binary"
+          }
+        }
+      },
+      "HTTPValidationError": {
+        "title": "HTTPValidationError",
+        "type": "object",
+        "properties": {
+          "detail": {
+            "title": "Detail",
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            }
+          }
+        }
+      },
+      "ValidationError": {
+        "title": "ValidationError",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "type": "object",
+        "properties": {
+          "loc": {
+            "title": "Location",
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "msg": {
+            "title": "Message",
+            "type": "string"
+          },
+          "type": {
+            "title": "Error Type",
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

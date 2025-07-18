@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!-- <item name="android:editTextBackground">@drawable/rn_edit_text_material</item> -->
+         <item name="android:autofilledHighlight">@drawable/autofill_highlight</item>
+    </style>
+ <style name="BootTheme" parent="Theme.SplashScreen">
+ <!-- <item name="android:windowBackground">@drawable/launch_background</item> -->
+    <item name="windowSplashScreenBackground">@color/bootsplash_background</item>
+    <item name="windowSplashScreenAnimatedIcon">@drawable/vd_vector</item>
+    <item name="postSplashScreenTheme">@style/AppTheme</item>
+      <!-- <item name="android:windowSplashScreenBrandingImage">@drawable/andr11</item>  -->
+
+  </style>
+</resources>

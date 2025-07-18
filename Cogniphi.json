@@ -1,0 +1,281 @@
+{
+  "client": "Thunder Client",
+  "collectionName": "Cogniphi",
+  "dateExported": "2022-07-29T17:38:33.555Z",
+  "version": "1.1",
+  "folders": [],
+  "requests": [
+    {
+      "_id": "a3a58c08-4652-4795-b3a6-0d5550158c09",
+      "colId": "946f507e-e3cb-4533-9f45-c5912c135ef4",
+      "containerId": "",
+      "name": "login",
+      "url": "http://65.2.42.62:8080/auth/realms/itac20/protocol/openid-connect/token",
+      "method": "POST",
+      "sortNum": 10000,
+      "created": "2022-07-29T07:05:53.276Z",
+      "modified": "2022-07-29T07:08:04.877Z",
+      "headers": [
+        { "name": "Content-Type", "value": "application/x-www-form-urlencoded" }
+      ],
+      "params": [],
+      "body": {
+        "type": "formencoded",
+        "raw": "",
+        "form": [
+          { "name": "grant_type", "value": "password" },
+          { "name": "client_id", "value": "itac_app_qa" },
+          {
+            "name": "client_secret",
+            "value": "8a693ac8-f8b9-4e8d-8b98-7aa7461db205"
+          },
+          { "name": "username", "value": "jacobbinny@gmail.com" },
+          { "name": "password", "value": "jacob@ii2" }
+        ]
+      },
+      "tests": []
+    },
+    {
+      "_id": "00583815-934b-487d-ba8d-8b03159ff12f",
+      "colId": "946f507e-e3cb-4533-9f45-c5912c135ef4",
+      "containerId": "",
+      "name": "Trip Info",
+      "url": "http://13.233.56.180:11014/trips/list-trips/1",
+      "method": "GET",
+      "sortNum": 20000,
+      "created": "2022-07-29T07:08:59.061Z",
+      "modified": "2022-07-29T07:09:29.250Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "fe59b615-3317-4ff6-8a69-d61d00fb7669",
+      "colId": "946f507e-e3cb-4533-9f45-c5912c135ef4",
+      "containerId": "",
+      "name": "All Trip details API",
+      "url": "http://13.233.56.180:11014/trips/list-trips/1",
+      "method": "GET",
+      "sortNum": 25000,
+      "created": "2022-07-29T07:21:29.716Z",
+      "modified": "2022-07-29T07:21:29.716Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "b2864cad-b4c3-49cd-b064-7d340d672b20",
+      "colId": "946f507e-e3cb-4533-9f45-c5912c135ef4",
+      "containerId": "",
+      "name": "Get Trips For User by date",
+      "url": "http://13.233.56.180:11014/trips/user-trips",
+      "method": "POST",
+      "sortNum": 26250,
+      "created": "2022-07-29T17:09:39.151Z",
+      "modified": "2022-07-29T17:28:08.412Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"toTime\": \"2022-06-16 11:20:00\",\n  \"fromTime\": \"2022-06-16 18:29:00\",\n  \"userId\": 1\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "68d8314f-d428-469b-b55a-279ed5c3ad94",
+      "colId": "946f507e-e3cb-4533-9f45-c5912c135ef4",
+      "containerId": "",
+      "name": "Get Events For Trips",
+      "url": "http://13.233.56.180:11013/tracking/trips-event",
+      "method": "POST",
+      "sortNum": 26875,
+      "created": "2022-07-29T17:13:23.597Z",
+      "modified": "2022-07-29T17:29:30.524Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\r\n  \"toTime\": \"2022-06-16 11:20:00\",\r\n  \"fromTime\": \"2022-06-16 18:29:00\",\r\n  \"ids\": [1,2]\r\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "0d375da0-cd96-468b-a529-1d653a0006b0",
+      "colId": "946f507e-e3cb-4533-9f45-c5912c135ef4",
+      "containerId": "",
+      "name": "Get Track",
+      "url": "http://13.233.56.180:11013/tracking/getTrack",
+      "method": "POST",
+      "sortNum": 27031.3,
+      "created": "2022-07-29T17:33:42.706Z",
+      "modified": "2022-07-29T17:35:50.867Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"toTime\": \"2022-06-16 11:20:00\",\n  \"fromTime\": \"2022-06-16 18:29:00\",\n  \"id\": 300,\n  \"tripId\": 19828\n}\n",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "e80e0ff2-8126-4e9b-9d87-450a505507f7",
+      "colId": "946f507e-e3cb-4533-9f45-c5912c135ef4",
+      "containerId": "",
+      "name": "Email",
+      "url": "http://13.233.56.180:11017/notifications/send-notification",
+      "method": "POST",
+      "sortNum": 27187.5,
+      "created": "2022-07-29T17:17:09.349Z",
+      "modified": "2022-07-29T17:20:02.385Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"cc\": \"aksh23484@gmail.com\",\n  \"channelType\": \"EMAIL\",\n  \"deviceId\": 0,\n  \"eventCode\": 0,\n  \"eventDetails\": \"string\",\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"message\": \"string\",\n  \"notificationTime\": \"2021-02-12 12:03:03\",\n  \"orgId\": 0,\n  \"priority\": \"CRITICAL\",\n  \"targets\": \"aksh23484@gmail.com\",\n  \"title\": \"string\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "c510bdff-6c70-49ee-baff-8f2a38c78f77",
+      "colId": "946f507e-e3cb-4533-9f45-c5912c135ef4",
+      "containerId": "",
+      "name": "Update Trip Status",
+      "url": "http://13.233.56.180:11014/trips/update-status",
+      "method": "POST",
+      "sortNum": 27500,
+      "created": "2022-07-29T07:22:31.185Z",
+      "modified": "2022-07-29T07:28:16.880Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"applyForRecurring\": true,\n  \"note\": \"string\",\n  \"status\": \"Completed\",\n  \"tripId\":19828\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "c1bf40f7-4c73-4812-86c6-02b0b3f829e2",
+      "colId": "946f507e-e3cb-4533-9f45-c5912c135ef4",
+      "containerId": "",
+      "name": " Upload image & document ",
+      "url": "http://13.233.56.180:11018/api/upload",
+      "method": "POST",
+      "sortNum": 28750,
+      "created": "2022-07-29T07:28:49.788Z",
+      "modified": "2022-07-29T07:30:35.498Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "formdata",
+        "raw": "",
+        "form": [],
+        "files": [
+          {
+            "name": "file",
+            "value": "/Users/apple/Downloads/money 1 (Traced).png"
+          }
+        ]
+      },
+      "tests": []
+    },
+    {
+      "_id": "96614bad-b6b1-49d5-b5f0-c5dab2c6ad0d",
+      "colId": "946f507e-e3cb-4533-9f45-c5912c135ef4",
+      "containerId": "",
+      "name": "UserId-details",
+      "url": "http://13.233.56.180:11020/api/user-detail/558b76be-44ad-4eee-ba77-b5c55716a62c",
+      "method": "GET",
+      "sortNum": 30000,
+      "created": "2022-07-29T07:19:49.736Z",
+      "modified": "2022-07-29T07:20:58.391Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "483218fb-1dc1-43db-83c8-6dba33b6b637",
+      "colId": "946f507e-e3cb-4533-9f45-c5912c135ef4",
+      "containerId": "",
+      "name": "Vehicle details",
+      "url": "http://13.233.56.180:11018/api/list-vehicles/1",
+      "method": "GET",
+      "sortNum": 40000,
+      "created": "2022-07-29T07:09:54.639Z",
+      "modified": "2022-07-29T07:10:21.094Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "66ecff6e-a2b4-498d-9200-94e1ddc634f6",
+      "colId": "946f507e-e3cb-4533-9f45-c5912c135ef4",
+      "containerId": "",
+      "name": "Vehicle Type",
+      "url": "http://13.233.56.180:11018/api/vehicle-types",
+      "method": "GET",
+      "sortNum": 50000,
+      "created": "2022-07-29T07:10:24.851Z",
+      "modified": "2022-07-29T07:10:49.527Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "dbc39e07-0c6a-43d3-9db0-b6c375cfaada",
+      "colId": "946f507e-e3cb-4533-9f45-c5912c135ef4",
+      "containerId": "",
+      "name": "Driver Information",
+      "url": "http://13.233.56.180:11022/api/drivers/1",
+      "method": "GET",
+      "sortNum": 60000,
+      "created": "2022-07-29T07:10:56.671Z",
+      "modified": "2022-07-29T07:11:34.261Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "bc573e40-3dca-43f1-a7b5-a15b55ce3309",
+      "colId": "946f507e-e3cb-4533-9f45-c5912c135ef4",
+      "containerId": "",
+      "name": "Change Password",
+      "url": "http://13.233.56.180:11020/api/update-password",
+      "method": "POST",
+      "sortNum": 70000,
+      "created": "2022-07-29T07:11:46.959Z",
+      "modified": "2022-07-29T07:12:27.067Z",
+      "headers": [],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\r\n    \"email_address\" : \"jacob@cogniphi.com\",\r\n    \"password\" : \"Test@123\"\r\n}\r\n",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "e0f67d9f-5e51-4740-a916-47e450607a58",
+      "colId": "946f507e-e3cb-4533-9f45-c5912c135ef4",
+      "containerId": "",
+      "name": "Geofence",
+      "url": "http://13.233.56.180:11015/geofence/stops/get/trip?tripId=19823",
+      "method": "GET",
+      "sortNum": 80000,
+      "created": "2022-07-29T07:12:35.214Z",
+      "modified": "2022-07-29T17:06:27.229Z",
+      "headers": [],
+      "params": [{ "name": "tripId", "value": "19823", "isPath": false }],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"fromTime\": \"2021-12-12 08:08:08\",\n  \"id\": 0,\n  \"toTime\": \"2021-12-11 08:08:08\",\n  \"tripId\": 0\n}",
+        "form": []
+      },
+      "tests": []
+    }
+  ]
+}
