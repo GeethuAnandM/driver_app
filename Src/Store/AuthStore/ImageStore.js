@@ -10,7 +10,7 @@ class ImageStore {
   otp = { verified: false, value: 0 };
   EndOtp = { verified: false, value: 0 };
   EndSignature = {imageUrl: "", image: "",verified:false ,isDenied:false,capturedTime:""};
-  EndFeedback = { verified: false, rating: "", feedback: "", review: "" ,EndFeedbackValidated:false};
+  EndFeedback = { verified: false, rating: "", feedback: "", review: "" ,EndFeedbackValidated:false,DriverFeedback:false};
   expense = [];
   InStationChecked = { verified: false };
 currentScreen={name:""};
@@ -72,6 +72,7 @@ setEndFeedbackValidated:action,
       setEndRating: action,
       setEndFeedbackSelected: action,
       setEndFeedbackReview: action,
+      setDriverFeedback:action,
 
       setExpenseImage: action,
       // setStopGpsTracking:action,
@@ -143,7 +144,9 @@ this.EndFuelmeter.EndFuelValidated=value
   setEndFeedbackValidated(value){
     this.EndFeedback.EndFeedbackValidated=value;
   }
-
+  setDriverFeedback(value){
+    this.EndFeedback.DriverFeedback=value;
+  }
   setOtp(value) {
     this.otp.verified = value;
   }
@@ -253,7 +256,8 @@ this.EndFuelmeter.EndFuelValidated=value
       rating: "",
       feedback: "",
       review: "",
-      EndFeedbackValidated:false
+      EndFeedbackValidated:false,
+      DriverFeedback:false 
     };
     this.expense = [];
     // this.GpsTracking={verified:""};

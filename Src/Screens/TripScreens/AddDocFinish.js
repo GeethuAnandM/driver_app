@@ -262,7 +262,7 @@ const AddDocFinish = (props) => {
     } else if (endFuel && EndFuelmeter?.image === "") {
       showError("FUEL READING IS RQUIRED");
     } else if (endSelfie && EndSelfie?.image === "") {
-      showError("SELFE IS RQUIRED");
+      showError("TRIPSHEET IS RQUIRED");
     } else if (endOtpValidation && EndOtp?.verified === "") {
       console.log("otp verified", otp?.verified);
       showError("OTP  IS RQUIRED");
@@ -840,7 +840,7 @@ const AddDocFinish = (props) => {
                   marginLeft: moderateScale(10),
                   fontFamily: "NunitoSans-Bold",
                 }}
-                text={"Capture Selfie"}
+                text={"Capture TripSheet"}
               />
               {endSelfie && (
                 <Text_Custom

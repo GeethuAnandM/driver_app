@@ -1,14 +1,15 @@
 import { useNavigation, useTheme } from "@react-navigation/native";
 import { observer } from "mobx-react";
 import React, { useRef, useState } from "react";
-import { Alert, Dimensions, Image, StyleSheet, View } from "react-native";
+import { Alert, Dimensions, Image, StyleSheet, View ,Modal} from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { moderateScale, scale } from "react-native-size-matters";
 
 //For Below packages Refer: https://www.npmjs.com/package/react-native-signature-canvas
 import SignatureCanvas from "react-native-signature-canvas";
-
+import { AirbnbRating } from "react-native-ratings";
 import {
+  postFeedback,
   postSignature,
   uploadSignature
 } from "../../../Services/Actions/TripActions";
@@ -33,10 +34,15 @@ const EndSignature = (props, { text, onOK }) => {
   const { colors } = useTheme();
   const [isSignatureDrawn, setIsSignatureDrawn] = useState(false);
   const selectTrip = tripStore.selectedTrip;
-  const tripId = tripStore.selectedTrip.tripId;
+  // const tripId = tripStore.selectedTrip.tripId;
   const [saveClicked, SetSaveClicked] = useState(false);
   const modalizeRef = useRef(null);
   const { customerSignatureValidation } = tripStore.selectedTrip;
+  const [showRatingModal, setShowRatingModal] = useState(false);
+  const [ratingShown, setRatingShown] = useState(false);
+  const [rating, setRating] = useState(0);
+  const [ratingError, setRatingError] = useState("");
+   const { driverId, tripId, customerId } = tripStore.selectedTrip;
   const styles = StyleSheet.create({
     main_container: {
       marginHorizontal: moderateScale(20),
@@ -99,6 +105,35 @@ const EndSignature = (props, { text, onOK }) => {
       fontSize: 14,
       color: "#000", // Changed to black
       marginBottom: 10, // Adjust spacing as needed
+    },
+    modalOverlay: {
+      flex: 1,
+      backgroundColor: "rgba(0,0,0,0.5)",
+      justifyContent: "center",
+      alignItems: "center",
+    },
+    
+    ratingModal: {
+      width: "85%",
+      backgroundColor: "#fff",
+      borderRadius: 20,
+      padding: moderateScale(20),
+      alignItems: "center",
+    },
+    
+    thumbButton: {
+      marginTop: moderateScale(20),
+      backgroundColor: colors.primary1,
+      width: moderateScale(60),
+      height: moderateScale(60),
+      borderRadius: moderateScale(30),
+      justifyContent: "center",
+      alignItems: "center",
+    },
+    
+    thumbText: {
+      fontSize: scale(28),
+      color: "#fff",
     },
   });
 
@@ -185,6 +220,11 @@ const EndSignature = (props, { text, onOK }) => {
   const handleBegin = async () => {
     try {
       console.info("🚨 handleBegin");
+  
+      if (!imageStore.EndFeedback.DriverFeedback) {
+       
+        setShowRatingModal(true);
+      }
     } catch (err) {
       console.error("🚨 handleEnd: error:", err);
     }
@@ -346,8 +386,124 @@ const EndSignature = (props, { text, onOK }) => {
     moveNext();
   };
 
+
+const handleRating = (selectedRating) => {
+  console.log("rate", selectedRating);
+  setRating(selectedRating);
+  setRatingError("");
+};
+
+
+
+  const handleSubmitFeedback = async () => {
+    try {
+      if (!rating) {
+        setRatingError("Please select a rating before continuing");
+        return;
+      }
+  
+      const requestBody = {
+        driverId: driverId,
+        tripId: tripId,
+        rating: rating,
+        comments: "",
+        feedback: "",
+        insertedBy: "Customer",
+        createdBy: driverId,
+        customerId: customerId,
+      };
+  
+      console.log("🚨customer Feedback Request:", requestBody);
+  
+      const response = await postFeedback(requestBody);
+  
+      console.log("🚨 customer Feedback Response:", response);
+  
+      imageStore.setDriverFeedback(true);
+      setShowRatingModal(false);
+  
+    } catch (error) {
+      console.error("🚨 Feedback Submit Error:", error);
+      showError("Failed to submit feedback");
+    }
+  };
+
+
+
+
+
   return (
+    
+   
+    
     <Container>
+
+<Modal
+      visible={showRatingModal}
+      transparent
+      animationType="fade"
+    >
+      <View style={styles.modalOverlay}>
+        <View style={styles.ratingModal}>
+
+        <Text_Custom
+  text={"How was your experience?"}
+  style={{
+    fontFamily: "NunitoSans-Bold",
+    fontSize: scale(18),
+    textAlign: "center",
+    marginBottom: moderateScale(8),
+  }}
+/>
+
+<Text_Custom
+  text={"Please rate the service before signing"}
+  style={{
+    fontFamily: "NunitoSans-Regular",
+    fontSize: scale(13),
+    textAlign: "center",
+    color: "#7A7A7A",
+    marginBottom: moderateScale(20),
+  }}
+/>
+
+<AirbnbRating
+  count={5}
+  defaultRating={0}
+  size={32}
+  showRating={false}
+  onFinishRating={handleRating}
+/>
+
+{ratingError ? (
+  <Text_Custom
+    text={ratingError}
+    style={{
+      color: "#E53935",
+      fontSize: scale(12),
+      marginTop: moderateScale(10),
+      textAlign: "center",
+      fontFamily: "NunitoSans-Regular",
+    }}
+  />
+) : null}
+
+<Button
+  buttonStyles={[
+    styles.uplodeBtn,
+    {
+      width: "90%",
+      marginTop: moderateScale(20),
+    },
+  ]}
+  text={"Submit"}
+  onPress={handleSubmitFeedback}
+/>
+        </View>
+      </View>
+    </Modal>
+
+
       <CommonHeader goBack title="Add Document" />
       {/* {status === "prompt" ? (
         <CommonHeader fromEndSignature title="Add Document" />

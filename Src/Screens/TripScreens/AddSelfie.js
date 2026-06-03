@@ -18,7 +18,12 @@ import Container from "../../Components/Container/Container";
 import Text_Custom from "../../Components/Text_Custom";
 import { uploadImageURL } from "../../Services/Actions/AuthActions";
 import { imageStore } from "../../Store/AuthStore/ImageStore";
-import { AlertOpenSettings, getLocation, isImage, trackImageLocation } from "../../Utils/helper";
+import {
+  AlertOpenSettings,
+  getLocation,
+  isImage,
+  trackImageLocation,
+} from "../../Utils/helper";
 import { observer } from "mobx-react";
 import { trackImageCapture } from "../../Utils/MixpanelService";
 const AddSelfie = (props) => {
@@ -143,11 +148,6 @@ const AddSelfie = (props) => {
     },
   });
 
- 
-
-
-  
- 
   const ImageAdded = () => {
     const [manualReading, setManualReading] = useState("");
     const [active, setActive] = useState(false);
@@ -170,7 +170,10 @@ const AddSelfie = (props) => {
         <Gradient_Button
           text="Next"
           //   active={active}
-          onPress={() => {uploadImage();props.navigation.goBack()}}
+          onPress={() => {
+            uploadImage();
+            props.navigation.goBack();
+          }}
         />
         {/* {manualReading.trim() && <Gradient_Button text="Next" />} */}
       </React.Fragment>
@@ -182,7 +185,7 @@ const AddSelfie = (props) => {
         width: 300,
         height: 400,
         cropping: true,
-        useFrontCamera: true,
+        //useFrontCamera: true,
       })
         .then(async (image) => {
           setImage(image);
@@ -197,24 +200,22 @@ const AddSelfie = (props) => {
     }
   };
   const uploadImage = async () => {
+    trackImageCapture({ ...image, screen: props.route.name });
 
- 
-    trackImageCapture({ ...image,screen:props.route.name });
- 
- 
-   
-   // Upload image
-   await uploadImageURL({ ...image,screen:props.route.name}).then(async (res) => {
-      if (res.message) {
-        if (status === "start") {
-          setUploaded(true);
-          imageStore.setSelfie(res.message);
-        } else {
-          setUploaded(true);
-          imageStore.setEndSelfie(res.message);
+    // Upload image
+    await uploadImageURL({ ...image, screen: props.route.name }).then(
+      async (res) => {
+        if (res.message) {
+          if (status === "start") {
+            setUploaded(true);
+            imageStore.setSelfie(res.message);
+          } else {
+            setUploaded(true);
+            imageStore.setEndSelfie(res.message);
+          }
         }
       }
-    });
+    );
   };
   const skip = () => {
     // if (status == "start") {
@@ -240,15 +241,32 @@ const AddSelfie = (props) => {
               marginVertical: moderateScale(50),
             }}
           >
-            <Text_Custom text="Capture Selfie" style={styles.heading} />
-            <Text_Custom
-              text={
-                !showImage
-                  ? "Capture clear Selfie"
-                  : "Ensure image should be clear"
-              }
-              style={styles.Sub_heading}
-            />
+            {status === "start" ? (
+              <>
+                <Text_Custom text="Capture Selfie" style={styles.heading} />
+                <Text_Custom
+                  text={
+                    !showImage
+                      ? "Capture clear Selfie"
+                      : "Ensure image should be clear"
+                  }
+                  style={styles.Sub_heading}
+                />
+              </>
+            ) : (
+              <>
+                <Text_Custom text="Capture Tripsheet" style={styles.heading} />
+                <Text_Custom
+                  text={
+                    !showImage
+                      ? "Capture clear Tripsheet"
+                      : "Ensure image should be clear"
+                  }
+                  style={styles.Sub_heading}
+                />
+              </>
+            )}
+
             <TouchableOpacity
               style={styles.cameraViewFinder}
               onPress={() => {

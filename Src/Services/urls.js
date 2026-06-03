@@ -1,26 +1,4 @@
-//WITHOUT GATEWAY 
-//BASE URL production
-// export const API_BASE_URL = "http://iam.itac.cogniphi.com";
-// export const API_BASE_URL2 = "http://itac.cogniphi.com";
-// export const ITAC_Bata_API = "http://itac.cogniphi.com:11038";
-// export const ITAC_Bata_API2 = "http://itac.cogniphi.com:11039";
-// export const ITAC_PACKET_DATA="http://3.108.230.88";
-// BASE URL qa
-// export const API_BASE_URL = "http://13.233.229.160:8080";
-// export const API_BASE_URL2 = "http://13.233.175.113";
-// export const ITAC_Bata_API = "http://13.233.175.113:11038";
-// export const ITAC_Bata_API2 = "http://13.233.175.113:11039";
-//export const ITAC_PACKET_DATA="http://13.233.175.113";
-//FULL URL without gateway
-//export const getAuthApiUrl = (endpoint) => API_BASE_URL + endpoint;
-//export const getAuthApiUrl2 = (endpoint) => API_BASE_URL2 + endpoint;
-// export const getITACUrl = (endpoint) => ITAC_Bata_API + endpoint;
-// export const getITACUrl2 = (endpoint) => ITAC_Bata_API2 + endpoint;
 
-//GATEWAY
-//BASE URL production
-// export const API_BASE_URL2 = "http://43.204.11.101:8081/gateway";
-//  export const ITAC_PACKET_DATA="http://3.108.230.88";
 
 //BASE URL QA
 export const API_BASE_URL2 = "http://13.233.175.113:8081/gateway";

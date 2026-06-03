@@ -152,7 +152,7 @@ const EndSelfie = (props) => {
         width: 300,
         height: 400,
         cropping: true,
-        useFrontCamera: true,
+        //useFrontCamera: true,
       })
         .then(async (image) => {
           setImage(image);
@@ -218,11 +218,11 @@ const EndSelfie = (props) => {
               marginVertical: moderateScale(50),
             }}
           >
-            <Text_Custom text="Capture Selfie" style={styles.heading} />
+            <Text_Custom text="Capture Tripsheet" style={styles.heading} />
             <Text_Custom
               text={
                 !showImage
-                  ? "Capture clear Selfie"
+                  ? "Capture clear image of tripsheet"
                   : "Ensure image should be clear"
               }
               style={styles.Sub_heading}
