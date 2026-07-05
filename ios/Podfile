@@ -1,5 +1,6 @@
 require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
+require_relative '../node_modules/react-native-permissions/scripts/setup'
 # $RNFirebaseAsStaticFramework = true
 platform :ios, '13.0'
 
@@ -9,6 +10,7 @@ pod 'GoogleUtilities', :modular_headers => true
 pod 'FirebaseCore', :modular_headers => true
 
 target 'cogniphi' do
+  pod 'TOCropViewController', '~> 2.7.4'
   # use_frameworks!
   # pre_install do |installer|
   #   Pod::Installer::Xcode::TargetValidator.send(:define_method, :verify_no_static_framework_transitive_dependencies) {}
@@ -24,12 +26,13 @@ target 'cogniphi' do
   #   end
   # end
   config = use_native_modules!
-  permissions_path = '../node_modules/react-native-permissions/ios'
-  pod 'Permission-PhotoLibrary', :path => "#{permissions_path}/PhotoLibrary"
-  pod 'Permission-LocationAccuracy', :path => "#{permissions_path}/LocationAccuracy"
-  pod 'Permission-LocationAlways', :path => "#{permissions_path}/LocationAlways"
-  pod 'Permission-LocationWhenInUse', :path => "#{permissions_path}/LocationWhenInUse"
-  pod 'Permission-Notifications', :path => "#{permissions_path}/Notifications"
+  setup_permissions([
+  'PhotoLibrary',
+  'LocationAccuracy',
+  'LocationAlways',
+  'LocationWhenInUse',
+  'Notifications',
+])
   # Flags change depending on the env values.
   flags = get_default_flags()
   rn_maps_path = '../node_modules/react-native-maps'
@@ -55,7 +58,7 @@ target 'cogniphi' do
   #
   # Note that if you have use_frameworks! enabled, Flipper will not work and
   # you should disable the next line.
-  use_flipper!()
+  #use_flipper!()
   # use_frameworks!
   post_install do |installer|
     installer.target_installation_results.pod_target_installation_results.each do |pod_name, target_installation_result|

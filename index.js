@@ -10,7 +10,10 @@ import bgMessaging from "./Src/Notification/backgroundNotif";
 import { exp } from "react-native-reanimated";
 import ReactNativeForegroundService from "@supersami/rn-foreground-service";
 
-ReactNativeForegroundService.register();
+//ReactNativeForegroundService.register();
+if (Platform.OS === "android") {
+  ReactNativeForegroundService.register();
+}
 Text.defaultProps = Text.defaultProps || {};
 Text.defaultProps.allowFontScaling = false;
 // Text.defaultProps.style = { fontFamily: "NunitoSans-BoldItalic" };
